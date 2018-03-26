@@ -10,7 +10,31 @@
 
   gtag('config', 'UA-116455820-1');
 </script>
-
+<style>
+.intrinsic-container {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+}
+ 
+/* 16x9 Aspect Ratio */
+.intrinsic-container-16x9 {
+  padding-bottom: 56.25%;
+}
+ 
+/* 4x3 Aspect Ratio */
+.intrinsic-container-4x3 {
+  padding-bottom: 75%;
+}
+ 
+.intrinsic-container iframe {
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+</style>
     <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -29,7 +53,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T7S9HJR"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
-
+<div class="intrinsic-container intrinsic-container-16x9">
 <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScrKAwycdxBa2GVDtyafh8dneVSEh59KLPUjLu25qpvbViO9A/viewform?embedded=true" width="768" height="800" frameborder="0" marginheight="0" align="center" marginwidth="0">Loading...</iframe>  
+</div>
 </body>
 </html>
